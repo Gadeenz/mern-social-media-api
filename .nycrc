@@ -1,0 +1,27 @@
+{
+  "check-coverage": true,
+  "exclude": [
+    "**/*.processor.ts",
+    "**/*.spec.ts",
+    "**/*.validation.ts",
+    "**/*.response.ts",
+    "**/events.ts",
+    "**/*.controller.ts",
+    "src/db",
+    "src/common",
+    "src/server.ts",
+    "src/util"
+  ],
+  "statements": 80,
+  "branches": 70,
+  "functions": 80,
+  "lines": 80,
+  "reporter": [
+    "lcov",
+    "text-summary"
+  ],
+  "extension": [
+    ".ts"
+  ],
+  "cache": false
+}
