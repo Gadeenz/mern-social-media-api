@@ -16,6 +16,18 @@ const BaseSchema = new Schema<IBase>(
     name: {
       type: String,
     },
+    firstName: {
+      type: String,
+      required: true,
+      min: 2,
+      max: 50,
+    },
+    lastName: {
+      type: String,
+      required: true,
+      min: 2,
+      max: 50,
+    },
     email: {
       type: String,
       sparse: true,
@@ -53,6 +65,18 @@ const BaseSchema = new Schema<IBase>(
       type: Number,
       default: 0,
     },
+    picturePath: {
+      type: String,
+      default: '',
+    },
+    friends: {
+      type: Array,
+      default: [],
+    },
+    location: String,
+    occupation: String,
+    viewedProfile: Number,
+    impressions: Number,
   },
   baseOptions
 );
